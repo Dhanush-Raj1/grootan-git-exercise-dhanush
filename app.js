@@ -13,7 +13,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/profile', (req, res) => {
-  res.json(userData); 
+  res.json({
+    success: true,
+    user: userData,
+    timestamp: new Date().toISOString()
+  }); 
 });
 
 const PORT = 3000;
