@@ -27,4 +27,27 @@ class Demo
         System.out.println();
         login_system();
     }
-} 
+
+    public static void login_system()
+    {
+        String user = "admin";
+
+        switch(user)
+        {
+            case "admin":
+                System.out.println("Full access");
+                break;
+            
+            case "guest":
+                System.out.println("Limited access");
+                break;
+
+            case "subscriber":
+                System.out.println("Standard access");
+                break;
+            
+            default:
+                System.out.println("Unknow user");
+        }
+    }
+}
