@@ -4,7 +4,8 @@ const app = express();
 const userData = {
   name: 'Groot',
   email: 'ven@diesel.com',
-  avatar: 'https://i.pravatar.cc/150'
+  avatar: 'https://i.pravatar.cc/150',
+  bio: 'I am Groot'
 };
 
 app.get('/', (req, res) => {
