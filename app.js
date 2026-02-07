@@ -2,8 +2,9 @@ const express = require('express');
 const app = express();
 
 const userData = {
-  name: 'John Doe',
-  email: 'john@example.com'
+  name: 'Groot',
+  email: 'ven@diesel.com',
+  avatar: 'https://i.pravatar.cc/150'
 };
 
 app.get('/', (req, res) => {
