@@ -26,6 +26,9 @@ class Demo
 
         System.out.println();
         login_system();
+
+        System.out.println();
+        System.out.println("Session ended");
     }
 
     public static void login_system()
