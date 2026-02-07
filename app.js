@@ -1,0 +1,26 @@
+const express = require('express');
+const app = express();
+
+const userData = {
+  name: 'Groot',
+  email: 'ven@diesel.com',
+  avatar: 'https://i.pravatar.cc/150',
+  bio: 'I am Groot'
+};
+
+app.get('/', (req, res) => {
+  res.send('Welcome!');
+});
+
+app.get('/profile', (req, res) => {
+  res.json({
+    success: true,
+    user: userData,
+    timestamp: new Date().toISOString()
+  }); 
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
